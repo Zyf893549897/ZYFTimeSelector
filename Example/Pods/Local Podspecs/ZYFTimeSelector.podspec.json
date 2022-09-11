@@ -1,0 +1,22 @@
+{
+  "name": "ZYFTimeSelector",
+  "version": "0.1.0",
+  "summary": "A short description of ZYFTimeSelector.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/张云飞/ZYFTimeSelector",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "张云飞": "893549897@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/张云飞/ZYFTimeSelector.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZYFTimeSelector/Classes/**/*"
+}

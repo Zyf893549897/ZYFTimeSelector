@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0AD56137A9F7EC7D739B05EB /* Pods_ZYFTimeSelector_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFTimeSelector_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		209DA69E3FB16C9B71199918 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		209DA69E3FB16C9B71199918 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZYFTimeSelector_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYFTimeSelector_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,11 +62,11 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7982F230028BA2EFCB9482B8 /* Pods-ZYFTimeSelector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFTimeSelector_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYFTimeSelector_Example/Pods-ZYFTimeSelector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		94DF3148F0836F33BA94A156 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		94DF3148F0836F33BA94A156 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D6667CCEF27FDB2416AA0F0B /* Pods-ZYFTimeSelector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFTimeSelector_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYFTimeSelector_Example/Pods-ZYFTimeSelector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DA106419E180B67A3FD470D2 /* Pods-ZYFTimeSelector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFTimeSelector_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZYFTimeSelector_Tests/Pods-ZYFTimeSelector_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F5F4669ADF916A43D5D897DE /* Pods_ZYFTimeSelector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFTimeSelector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F77DFCAA9001C9B112A63E61 /* ZYFTimeSelector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZYFTimeSelector.podspec; path = ../ZYFTimeSelector.podspec; sourceTree = "<group>"; };
+		F77DFCAA9001C9B112A63E61 /* ZYFTimeSelector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYFTimeSelector.podspec; path = ../ZYFTimeSelector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				6B5B33E9871EA19C741913B2 /* Pods-ZYFTimeSelector_Tests.debug.xcconfig */,
 				DA106419E180B67A3FD470D2 /* Pods-ZYFTimeSelector_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

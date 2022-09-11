@@ -1,0 +1,16 @@
+PODS:
+  - ZYFTimeSelector (0.1.0)
+
+DEPENDENCIES:
+  - ZYFTimeSelector (from `../`)
+
+EXTERNAL SOURCES:
+  ZYFTimeSelector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZYFTimeSelector: 55bcd2db111e5aec89c06b5f8b71bfe60e0db594
+
+PODFILE CHECKSUM: 08211bf5895b3b06d67a6784a6fa3d12f8aa2034
+
+COCOAPODS: 1.11.2
