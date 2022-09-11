@@ -6,16 +6,14 @@
 //
 
 #import "UIView+ZYFMethods.h"
-#import "AppDelegate.h"
+
 @implementation UIView (ZYFMethods)
 - (void)zyf_showInAppWindowAnimation{
-    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    if (app.window) {
-        [app.window addSubview:self];
-    }
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
     self.alpha = 0;
-    [UIView animateWithDuration:.2 animations:^{
-    self.alpha = 1;
+    [UIView animateWithDuration:.3 animations:^{
+        self.alpha = 1;
+        [self layoutIfNeeded];
     }];
 }
 @end

@@ -7,23 +7,30 @@
 //
 
 #import "ZYFViewController.h"
-
+#import <ZYFTimeSelector-umbrella.h>
+#define kZYFScreenBounds [UIScreen mainScreen].bounds
 @interface ZYFViewController ()
 
 @end
 
 @implementation ZYFViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
+    
+    UIButton * but = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+    but.backgroundColor = [UIColor orangeColor];
+    [but addTarget:self action:@selector(butAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:but];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)butAction:(UIButton *)but{
+    TimeSelectedView * timeView=[[TimeSelectedView alloc] initWithFrame:kZYFScreenBounds];
+    timeView.timeBlockA = ^(NSString * _Nonnull timestr) {
+        NSLog(@"=======%@",timestr);
+    };
+    [timeView zyf_showInAppWindowAnimation];
 }
 
 @end

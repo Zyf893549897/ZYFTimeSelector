@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "TimeSelectedView.h"
+#import "TimeTools.h"
+#import "UIView+ZYFMethods.h"
 
 FOUNDATION_EXPORT double ZYFTimeSelectorVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZYFTimeSelectorVersionString[];

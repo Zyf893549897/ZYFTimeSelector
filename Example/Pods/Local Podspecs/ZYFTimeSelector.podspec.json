@@ -1,9 +1,9 @@
 {
   "name": "ZYFTimeSelector",
-  "version": "0.1.0",
-  "summary": "A short description of ZYFTimeSelector.",
+  "version": "0.0.2",
+  "summary": "时间选择 5分钟一个跨度",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/张云飞/ZYFTimeSelector",
+  "homepage": "https://github.com/Zyf893549897/ZYFTimeSelector",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "张云飞": "893549897@qq.com"
   },
   "source": {
-    "git": "https://github.com/张云飞/ZYFTimeSelector.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Zyf893549897/ZYFTimeSelector.git",
+    "tag": "0.0.2"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "9.0"
   },
-  "source_files": "ZYFTimeSelector/Classes/**/*"
+  "source_files": "ZYFTimeSelector/Classes/**/*.{h,m,xib}"
 }
