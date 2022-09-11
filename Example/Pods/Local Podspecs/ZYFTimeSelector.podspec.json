@@ -1,7 +1,7 @@
 {
   "name": "ZYFTimeSelector",
   "version": "0.0.2",
-  "summary": "时间选择 5分钟一个跨度",
+  "summary": "时间选择 5分钟一个跨度,支持无线循环",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Zyf893549897/ZYFTimeSelector",
   "license": {
