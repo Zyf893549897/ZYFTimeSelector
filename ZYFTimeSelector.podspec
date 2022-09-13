@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZYFTimeSelector'
-  s.version          = '0.0.3'
-  s.summary          = '时间选择 5分钟一个跨度,支持无线循环'
+  s.version          = '0.0.4'
+  s.summary          = '时间选择 5分钟一个跨度,支持无线循环,支持显示传入时间，样式和时间 等可看代码自行修改或者联系我 13534070946'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

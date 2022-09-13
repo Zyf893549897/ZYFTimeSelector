@@ -20,7 +20,28 @@
 #define scaleSize kZYFScreenWidth/375
 //按比例计算后的值得大小
 #define Scale(size) scaleSize*size
+@interface TimeSelectedView ()
+@property(nonatomic,strong)UILabel * weekLable;//  周几
 
+@property (nonatomic, strong)NSMutableArray * nianArr;// 年 数据源
+@property (nonatomic, strong)NSMutableArray * yueArr;// 月 数据源
+@property (nonatomic, strong)NSMutableArray * riArr;// 日 数据源
+@property (nonatomic, strong)NSMutableArray * timeArrA;// 时 数据源
+@property (nonatomic, strong)NSMutableArray * timeArrB;// 分 数据源
+@property (nonatomic, strong)NSArray * timeArrC;// : 数据源
+
+@property(nonatomic,assign)int sumA;//时  记录位置用
+@property(nonatomic,assign)int sumB;//分
+@property(nonatomic,assign)int nian;
+@property(nonatomic,assign)int yue;
+@property(nonatomic,assign)int ri;
+
+@property(assign,nonatomic)NSInteger indexA;
+@property(assign,nonatomic)NSInteger indexB;
+@property(assign,nonatomic)NSInteger indexC;
+@property(assign,nonatomic)NSInteger indexD;
+@property(assign,nonatomic)NSInteger indexE;
+@end
 @implementation TimeSelectedView
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self=[super initWithFrame:frame]) {
@@ -36,14 +57,6 @@
     return self;
 }
 
--(void)setType:(NSString *)type{
-    _type=type;
-    if ([_type isEqualToString:@"start"]) {
-        self.label.text=@"开始时间";
-    }else{
-        self.label.text=@"结束时间";
-    }
-}
 
 -(void)initUI{
     UITapGestureRecognizer * tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeView:)];
@@ -272,28 +285,22 @@
     //停止滚动代理方法
     if (component==0) {
         self.indexA=row;
-        
         self.nian=(int)row%40;
         [self getDays];
     }else if (component==1){
         self.indexB=row;
-        
         self.yue=(int)row%12;
         [self getDays];
     }else if (component==2){
         self.indexC=row;
-        
         self.ri=(int)row%[self.riArr count];
     }else if (component==3){
-
     }else if (component==4) {
         self.indexD=row;
-        
         self.sumA = (int)row%24;
     }else if (component==5){
     }else{
         self.indexE=row;
-        
         self.sumB = (int)row%12;
     }
     
@@ -386,10 +393,7 @@
 }
 -(void)qiedingAction:(UIButton *)sedner{
     
-    if ([self.type isEqualToString:@"start"]) {
-        self.timeBlockA(self.timeStr);
-    }
-    if ([self.type isEqualToString:@"end"]) {
+    if (self.timeBlockA != nil){
         self.timeBlockA(self.timeStr);
     }
     [self removeSuperview];

@@ -1,5 +1,5 @@
 PODS:
-  - ZYFTimeSelector (0.0.3)
+  - ZYFTimeSelector (0.0.4)
 
 DEPENDENCIES:
   - ZYFTimeSelector (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZYFTimeSelector: 85c264c7360b1c4ce7c65605e0e04689abb1dff5
+  ZYFTimeSelector: f3273e7b882c7cc9912585b8c45cfd508e729d1c
 
 PODFILE CHECKSUM: 08211bf5895b3b06d67a6784a6fa3d12f8aa2034
 
