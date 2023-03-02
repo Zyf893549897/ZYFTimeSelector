@@ -8,7 +8,7 @@
 
 #import "ZYFViewController.h"
 #import <ZYFTimeSelector-umbrella.h>
-#define kZYFScreenBounds [UIScreen mainScreen].bounds
+
 @interface ZYFViewController ()
 
 @end
@@ -21,16 +21,18 @@
     
     UIButton * but = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
     but.backgroundColor = [UIColor orangeColor];
+    
     [but addTarget:self action:@selector(butAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but];
 }
 
 -(void)butAction:(UIButton *)but{
-    TimeSelectedView * timeView=[[TimeSelectedView alloc] initWithFrame:kZYFScreenBounds];
+    TimeSelectedView * timeView=[[TimeSelectedView alloc] init];
+    timeView.interval = 1;
     timeView.timeBlockA = ^(NSString * _Nonnull timestr) {
         NSLog(@"=======%@",timestr);
     };
-    [timeView zyf_showInAppWindowAnimation];
+    [timeView pop];
 }
 
 @end

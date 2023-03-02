@@ -8,14 +8,14 @@
 //
 
 #import "TimeSelectedView.h"
-
+#import "UIView+ZYFMethods.h"
 #import "TimeTools.h"
 
 #define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self;
 #define kZYFScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kZYFScreenHeight [UIScreen mainScreen].bounds.size.height
 #define StartandEndwidth ((kZYFScreenWidth-Scale(50))-Scale(60))
-
+#define kZYFScreenBounds [UIScreen mainScreen].bounds
 //宽度对比的比例值
 #define scaleSize kZYFScreenWidth/375
 //按比例计算后的值得大小
@@ -45,18 +45,21 @@
 @implementation TimeSelectedView
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self=[super initWithFrame:frame]) {
+        self.frame = kZYFScreenBounds;
         self.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+        self.interval = 1;
         self.timeArrA=[NSMutableArray array];
         self.timeArrB=[NSMutableArray array];
         self.nianArr=[NSMutableArray array];
         self.yueArr=[NSMutableArray array];
         self.riArr=[NSMutableArray array];
-        [self initUI];
-        
     }
     return self;
 }
-
+-(void)pop{
+    [self initUI];
+    [self zyf_showInAppWindowAnimation];
+}
 
 -(void)initUI{
     UITapGestureRecognizer * tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeView:)];
@@ -107,7 +110,7 @@
     [view addSubview:btnB];
     
     UIView * linview=[[UIView alloc] initWithFrame:CGRectMake(0, Scale(44), kZYFScreenWidth-Scale(50), 0.6)];
-    linview.backgroundColor=[UIColor blackColor];
+    linview.backgroundColor=[UIColor grayColor];
     [view addSubview:linview];
     [self.blackView addSubview:view];
 
@@ -164,7 +167,7 @@
     }
     self.timeArrC=@[@":",@":",@":",@":"];
     // 分
-    for (int i=0;i<60; i=i+5) {
+    for (int i=0;i<60; i=i+self.interval) {
         NSString * str=[NSString stringWithFormat:@"%02d",i];
         [self.timeArrB addObject:str];
     }
@@ -278,7 +281,7 @@
     }else if (component==5){
         return self.timeArrC[row];
     }else{
-        return self.timeArrB[row%12];
+        return self.timeArrB[row%(60/self.interval)];
     }
 }
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
@@ -301,7 +304,7 @@
     }else if (component==5){
     }else{
         self.indexE=row;
-        self.sumB = (int)row%12;
+        self.sumB = (int)row%(60/self.interval);
     }
     
     [self.pickerView reloadAllComponents];

@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef enum IntervalType{
+    one_minute,
+    five_minute
+}IntervalState;
 typedef void (^Mytimeblck) (NSString * timestr);
 @interface TimeSelectedView : UIView<UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
 @property(nonatomic,strong)UIView * blackView;
@@ -18,11 +21,11 @@ typedef void (^Mytimeblck) (NSString * timestr);
 @property(nonatomic,copy)NSString * timeStr;//回传的时间
 @property(nonatomic,copy) Mytimeblck timeBlockA;
 
-
+@property(nonatomic,assign)IntervalState interval; //时间间隔  默认一分钟   可以改为 5 分钟
 
 @property(nonatomic,copy)NSString * initialTimeStr;//初始时间
--(void)initUI;
 
+-(void)pop;
 @end
 
 NS_ASSUME_NONNULL_END
