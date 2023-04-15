@@ -22,6 +22,9 @@
     UIButton * but = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
     but.backgroundColor = [UIColor orangeColor];
     
+    
+    
+    
     [but addTarget:self action:@selector(butAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but];
 }
