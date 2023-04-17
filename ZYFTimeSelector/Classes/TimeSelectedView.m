@@ -8,7 +8,7 @@
 //
 
 #import "TimeSelectedView.h"
-#import "UIView+ZYFMethods.h"
+
 #import "TimeTools.h"
 
 #define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self;
@@ -58,7 +58,6 @@
 }
 -(void)pop{
     [self initUI];
-    [self zyf_showInAppWindowAnimation];
 }
 
 -(void)initUI{
@@ -71,17 +70,7 @@
     self.blackView.backgroundColor=[UIColor whiteColor];
     self.blackView.layer.cornerRadius=Scale(10);
     [self addSubview:self.blackView];
-    
-    
-    //改变透明度即可实现效果
-    WeakSelf(myself);
-    self.blackView.alpha=0;
-    [UIView animateWithDuration:0.5 animations:^{
-        myself.blackView.alpha = 1.0;
-        myself.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
-        [myself layoutIfNeeded];
-    }];
-    
+
     
     UIView * view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, kZYFScreenWidth-Scale(50), Scale(45))];
     view.layer.cornerRadius=Scale(10);
@@ -245,6 +234,17 @@
     UIView * clearview=[[UIView alloc] initWithFrame:CGRectMake(kZYFScreenWidth-Scale(85)-StartandEndwidth/6,0, Scale(20), Scale(200))];
     [self.blackView addSubview:clearview];
     
+    
+    
+    //改变透明度即可实现效果
+    WeakSelf(myself);
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
+    [UIView animateWithDuration:0.1 animations:^{
+        myself.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
+        myself.blackView.frame=CGRectMake(0, 0, kZYFScreenWidth-Scale(50), Scale(220));
+        myself.blackView.center=CGPointMake(kZYFScreenWidth/2, kZYFScreenHeight/2);
+        [myself layoutIfNeeded];
+    }];
 }
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 7;
@@ -408,7 +408,7 @@
 
 -(void)removeSuperview{
     WeakSelf(myself);
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.1 animations:^{
         myself.blackView.alpha = 0;
         myself.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0];
     } completion:^(BOOL finished) {

@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "张云飞";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 5R4PL9Q2TN;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 7982F230028BA2EFCB9482B8 /* Pods-ZYFTimeSelector_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5R4PL9Q2TN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZYFTimeSelector/ZYFTimeSelector-Prefix.pch";
 				INFOPLIST_FILE = "ZYFTimeSelector/ZYFTimeSelector-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = D6667CCEF27FDB2416AA0F0B /* Pods-ZYFTimeSelector_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5R4PL9Q2TN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZYFTimeSelector/ZYFTimeSelector-Prefix.pch";
 				INFOPLIST_FILE = "ZYFTimeSelector/ZYFTimeSelector-Info.plist";

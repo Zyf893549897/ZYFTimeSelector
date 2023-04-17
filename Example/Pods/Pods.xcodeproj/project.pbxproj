@@ -17,9 +17,7 @@
 		7E3DFD7A202C2575722CF56C4B046C25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		848E5B5EA65AA92A2D0BBA2B7C966D79 /* TimeSelectedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B922ED9ECF08CF5D2413C487FB189104 /* TimeSelectedView.m */; };
 		95B0184E454362BA251386D14D42F40A /* TimeSelectedView.h in Headers */ = {isa = PBXBuildFile; fileRef = E37045B12B2A4E9867171D64F4D22ECB /* TimeSelectedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE86C27C933964F1E9906A139F3148E2 /* UIView+ZYFMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = C891F3C0B1AB97575F06D843B7062651 /* UIView+ZYFMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C22FC9DD68ABC729EA50032F8E10EBFA /* Pods-ZYFTimeSelector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5440B1362C7BA398A99FC239C5FE051 /* Pods-ZYFTimeSelector_Example-dummy.m */; };
-		D35EAE08FF14D3A31C8CBA3F5DE72A08 /* UIView+ZYFMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAABF299BA5A25CFDDF16DB737E0F39 /* UIView+ZYFMethods.m */; };
 		E69406210F5E6D589985B72B8FC5842E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EB4CAAF84F7B9B2C1914893839851CCC /* Pods-ZYFTimeSelector_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B2213E39FAF7CE8F6775AAA613D7627 /* Pods-ZYFTimeSelector_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -57,14 +55,14 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78770D9EDE9E07E1AC6177A2970A16EF /* Pods-ZYFTimeSelector_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZYFTimeSelector_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		79A195209391E40A76E8EB0207AA92BB /* Pods-ZYFTimeSelector_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZYFTimeSelector_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7D95C6E352E4538E490A658A998E72CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7D95C6E352E4538E490A658A998E72CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		818E63AF6357B7EFE8834A96DAA925CA /* Pods-ZYFTimeSelector_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZYFTimeSelector_Example"; path = Pods_ZYFTimeSelector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E0835A208C84C2E3ECD827B8E50977 /* Pods-ZYFTimeSelector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYFTimeSelector_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0CA8195CF2E435DD06B97DBDE4AEFB4 /* ZYFTimeSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZYFTimeSelector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0CA8195CF2E435DD06B97DBDE4AEFB4 /* ZYFTimeSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZYFTimeSelector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3406F92D211FCF0158EB7F5A36D2A1C /* Pods-ZYFTimeSelector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYFTimeSelector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0F7076D9DB50C750A6597C99120509 /* Pods-ZYFTimeSelector_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZYFTimeSelector_Tests.modulemap"; sourceTree = "<group>"; };
-		ABDEDB12022C614910408784FA9AAE73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		ABDEDB12022C614910408784FA9AAE73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AC19AA713B80FF8B1C20C82A5D7B10F6 /* Pods-ZYFTimeSelector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYFTimeSelector_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AC4A881B72F663D41943D390AFF2417F /* Pods-ZYFTimeSelector_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZYFTimeSelector_Tests-dummy.m"; sourceTree = "<group>"; };
 		AF7650F0FE150C6515BB46E8DF6E41BE /* TimeTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TimeTools.h; path = ZYFTimeSelector/Classes/TimeTools.h; sourceTree = "<group>"; };
@@ -73,8 +71,6 @@
 		B922ED9ECF08CF5D2413C487FB189104 /* TimeSelectedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TimeSelectedView.m; path = ZYFTimeSelector/Classes/TimeSelectedView.m; sourceTree = "<group>"; };
 		BB90C5AE5742C1239E53BFE13C287147 /* Pods-ZYFTimeSelector_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZYFTimeSelector_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BC0AD98CB48087A76A61B0509A647CF7 /* Pods-ZYFTimeSelector_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZYFTimeSelector_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C891F3C0B1AB97575F06D843B7062651 /* UIView+ZYFMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZYFMethods.h"; path = "ZYFTimeSelector/Classes/UIView+ZYFMethods.h"; sourceTree = "<group>"; };
-		CFAABF299BA5A25CFDDF16DB737E0F39 /* UIView+ZYFMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZYFMethods.m"; path = "ZYFTimeSelector/Classes/UIView+ZYFMethods.m"; sourceTree = "<group>"; };
 		D66E17CE287609DF5E9A980282FC59D3 /* Pods-ZYFTimeSelector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYFTimeSelector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E37045B12B2A4E9867171D64F4D22ECB /* TimeSelectedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TimeSelectedView.h; path = ZYFTimeSelector/Classes/TimeSelectedView.h; sourceTree = "<group>"; };
 		EA04A8B4BFDB5BF2E91E5D4EB58F8677 /* ZYFTimeSelector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZYFTimeSelector-umbrella.h"; sourceTree = "<group>"; };
@@ -195,8 +191,6 @@
 				B922ED9ECF08CF5D2413C487FB189104 /* TimeSelectedView.m */,
 				AF7650F0FE150C6515BB46E8DF6E41BE /* TimeTools.h */,
 				409D3F747BB2722906B28492590D1AA8 /* TimeTools.m */,
-				C891F3C0B1AB97575F06D843B7062651 /* UIView+ZYFMethods.h */,
-				CFAABF299BA5A25CFDDF16DB737E0F39 /* UIView+ZYFMethods.m */,
 				AF7138314913D8E5D5E830D542FC7F9B /* Pod */,
 				DACFB9B59C2E8F954E9FBDE0C760C6C7 /* Support Files */,
 			);
@@ -263,7 +257,6 @@
 			files = (
 				95B0184E454362BA251386D14D42F40A /* TimeSelectedView.h in Headers */,
 				2C5AF54E5F18E35EB9A1BC2F746515A6 /* TimeTools.h in Headers */,
-				AE86C27C933964F1E9906A139F3148E2 /* UIView+ZYFMethods.h in Headers */,
 				774013325FF0C65FDEE6BAC9E7C9186D /* ZYFTimeSelector-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +396,6 @@
 			files = (
 				848E5B5EA65AA92A2D0BBA2B7C966D79 /* TimeSelectedView.m in Sources */,
 				5E6A943EDC6880DCB56B0DE0B54616E8 /* TimeTools.m in Sources */,
-				D35EAE08FF14D3A31C8CBA3F5DE72A08 /* UIView+ZYFMethods.m in Sources */,
 				4D5CB5644CA4A7A75C88DFDCB7423349 /* ZYFTimeSelector-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,8 +540,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

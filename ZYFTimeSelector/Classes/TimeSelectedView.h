@@ -20,11 +20,8 @@ typedef void (^Mytimeblck) (NSString * timestr);
 @property(nonatomic,strong)UILabel * label;//标题
 @property(nonatomic,copy)NSString * timeStr;//回传的时间
 @property(nonatomic,copy) Mytimeblck timeBlockA;
-
 @property(nonatomic,assign)IntervalState interval; //时间间隔  默认一分钟   可以改为 5 分钟
-
 @property(nonatomic,copy)NSString * initialTimeStr;//初始时间
-
 -(void)pop;
 @end
 
